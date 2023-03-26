@@ -30,8 +30,8 @@ My name's Ryan Hanson, a Computer Science Major at Western Oregon University
     - Building RESTful Web Applications and microservices
     - Working with EARe Studio for building concept databases as well as SRS documents
     - Docker 
-- 📝 Classes I've taken: (Discluding General Education)
-    Courses that I have completed:
+### 📝 Classes I've taken: (Discluding General Education)
+-Courses that I have completed:
     - CS 160: Survey of Computer Science
     - CS 161: Computer Science I
     - CS 162: Computer Science II
@@ -53,7 +53,7 @@ My name's Ryan Hanson, a Computer Science Major at Western Oregon University
     - MTH 251: Calculus I
     - MTH 252: Calculus II
     - MTH 354: Applied Discrete Mathematics
-    Courses that I will be taking Spring Term of 2023:
+-Courses that I will be taking Spring Term of 2023:
     - CS 361: Algorithms
     - CS 365: Operating Systems & Networking
     - CS 367: Software Design & Testing
