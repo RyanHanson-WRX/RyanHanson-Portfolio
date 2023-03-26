@@ -1,20 +1,5 @@
 ### Hey! 👋
 
-<!--
-**RyanxHanson/RyanxHanson** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
-
 My name's Ryan Hanson, a Computer Science Major at Western Oregon University
 ### 💥 About Me 💥
 - 📚 Junior at Western Oregon University, currently working towards a bachelor's degree
@@ -28,7 +13,7 @@ My name's Ryan Hanson, a Computer Science Major at Western Oregon University
     - Working with CLI (Unix and Linux), including shell scripts
     - Git Version Control (GitHub)
     - Building RESTful Web Applications and microservices
-    - Working with EARe Studio for building concept databases as well as SRS documents
+    - Working with EARe Studio for building concept databases
     - Docker 
 ### 📝 Classes I've taken: (Discluding General Education)
 - Courses that I have completed:
