@@ -10,7 +10,7 @@ My name's Ryan Hanson, a Computer Science Major at Western Oregon University
     - MSSQL, MySQL
     - MVC ASP.NET CORE
     - HTML5, CSS
-    - Working with CLI (Unix and Linux), including shell scripts
+    - Working with CLI (Unix and Linux), including Shell Scripts and Makefiles
     - Git Version Control (GitHub)
     - Building RESTful Web Applications and microservices
     - Working with EARe Studio for building concept databases
