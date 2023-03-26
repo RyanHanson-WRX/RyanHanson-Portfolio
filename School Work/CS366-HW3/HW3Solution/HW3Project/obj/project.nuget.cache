@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "h//hp/qYsu/R8X6Cq0/86BVsCzpLyQoYWGAXjzt+GU0iIMxyYDCOq8QD70tIRAtGvGq7ki61YZAApqpvO4dHMg==",
+  "success": true,
+  "projectFilePath": "/Users/ryanhanson/Desktop/Projects Staged for Portfolio/CS366-HW3/HW3Solution/HW3Project/HW3Project.csproj",
+  "expectedPackageFiles": [
+    "/Users/ryanhanson/.nuget/packages/microsoft.netcore.app.ref/6.0.14/microsoft.netcore.app.ref.6.0.14.nupkg.sha512",
+    "/Users/ryanhanson/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.14/microsoft.aspnetcore.app.ref.6.0.14.nupkg.sha512",
+    "/Users/ryanhanson/.nuget/packages/microsoft.netcore.app.host.osx-arm64/6.0.14/microsoft.netcore.app.host.osx-arm64.6.0.14.nupkg.sha512"
+  ],
+  "logs": []
+}

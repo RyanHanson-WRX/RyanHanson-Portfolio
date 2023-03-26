@@ -1,0 +1,59 @@
+/Users/ryanhanson/Desktop/CS 366/f22-cs366-RyanHanson-WRX/HW3/HW3Solution/HW3Project/bin/Debug/net6.0/appsettings.Development.json
+/Users/ryanhanson/Desktop/CS 366/f22-cs366-RyanHanson-WRX/HW3/HW3Solution/HW3Project/bin/Debug/net6.0/appsettings.json
+/Users/ryanhanson/Desktop/CS 366/f22-cs366-RyanHanson-WRX/HW3/HW3Solution/HW3Project/bin/Debug/net6.0/global.json
+/Users/ryanhanson/Desktop/CS 366/f22-cs366-RyanHanson-WRX/HW3/HW3Solution/HW3Project/bin/Debug/net6.0/HW3Project.staticwebassets.runtime.json
+/Users/ryanhanson/Desktop/CS 366/f22-cs366-RyanHanson-WRX/HW3/HW3Solution/HW3Project/bin/Debug/net6.0/HW3Project
+/Users/ryanhanson/Desktop/CS 366/f22-cs366-RyanHanson-WRX/HW3/HW3Solution/HW3Project/bin/Debug/net6.0/HW3Project.deps.json
+/Users/ryanhanson/Desktop/CS 366/f22-cs366-RyanHanson-WRX/HW3/HW3Solution/HW3Project/bin/Debug/net6.0/HW3Project.runtimeconfig.json
+/Users/ryanhanson/Desktop/CS 366/f22-cs366-RyanHanson-WRX/HW3/HW3Solution/HW3Project/bin/Debug/net6.0/HW3Project.dll
+/Users/ryanhanson/Desktop/CS 366/f22-cs366-RyanHanson-WRX/HW3/HW3Solution/HW3Project/bin/Debug/net6.0/HW3Project.pdb
+/Users/ryanhanson/Desktop/CS 366/f22-cs366-RyanHanson-WRX/HW3/HW3Solution/HW3Project/obj/Debug/net6.0/HW3Project.csproj.AssemblyReference.cache
+/Users/ryanhanson/Desktop/CS 366/f22-cs366-RyanHanson-WRX/HW3/HW3Solution/HW3Project/obj/Debug/net6.0/HW3Project.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ryanhanson/Desktop/CS 366/f22-cs366-RyanHanson-WRX/HW3/HW3Solution/HW3Project/obj/Debug/net6.0/HW3Project.AssemblyInfoInputs.cache
+/Users/ryanhanson/Desktop/CS 366/f22-cs366-RyanHanson-WRX/HW3/HW3Solution/HW3Project/obj/Debug/net6.0/HW3Project.AssemblyInfo.cs
+/Users/ryanhanson/Desktop/CS 366/f22-cs366-RyanHanson-WRX/HW3/HW3Solution/HW3Project/obj/Debug/net6.0/HW3Project.csproj.CoreCompileInputs.cache
+/Users/ryanhanson/Desktop/CS 366/f22-cs366-RyanHanson-WRX/HW3/HW3Solution/HW3Project/obj/Debug/net6.0/HW3Project.MvcApplicationPartsAssemblyInfo.cache
+/Users/ryanhanson/Desktop/CS 366/f22-cs366-RyanHanson-WRX/HW3/HW3Solution/HW3Project/obj/Debug/net6.0/HW3Project.RazorAssemblyInfo.cache
+/Users/ryanhanson/Desktop/CS 366/f22-cs366-RyanHanson-WRX/HW3/HW3Solution/HW3Project/obj/Debug/net6.0/HW3Project.RazorAssemblyInfo.cs
+/Users/ryanhanson/Desktop/CS 366/f22-cs366-RyanHanson-WRX/HW3/HW3Solution/HW3Project/obj/Debug/net6.0/staticwebassets.build.json
+/Users/ryanhanson/Desktop/CS 366/f22-cs366-RyanHanson-WRX/HW3/HW3Solution/HW3Project/obj/Debug/net6.0/staticwebassets.development.json
+/Users/ryanhanson/Desktop/CS 366/f22-cs366-RyanHanson-WRX/HW3/HW3Solution/HW3Project/obj/Debug/net6.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
+/Users/ryanhanson/Desktop/CS 366/f22-cs366-RyanHanson-WRX/HW3/HW3Solution/HW3Project/obj/Debug/net6.0/scopedcss/bundle/HW3Project.styles.css
+/Users/ryanhanson/Desktop/CS 366/f22-cs366-RyanHanson-WRX/HW3/HW3Solution/HW3Project/obj/Debug/net6.0/scopedcss/projectbundle/HW3Project.bundle.scp.css
+/Users/ryanhanson/Desktop/CS 366/f22-cs366-RyanHanson-WRX/HW3/HW3Solution/HW3Project/obj/Debug/net6.0/HW3Project.dll
+/Users/ryanhanson/Desktop/CS 366/f22-cs366-RyanHanson-WRX/HW3/HW3Solution/HW3Project/obj/Debug/net6.0/refint/HW3Project.dll
+/Users/ryanhanson/Desktop/CS 366/f22-cs366-RyanHanson-WRX/HW3/HW3Solution/HW3Project/obj/Debug/net6.0/HW3Project.pdb
+/Users/ryanhanson/Desktop/CS 366/f22-cs366-RyanHanson-WRX/HW3/HW3Solution/HW3Project/obj/Debug/net6.0/HW3Project.genruntimeconfig.cache
+/Users/ryanhanson/Desktop/CS 366/f22-cs366-RyanHanson-WRX/HW3/HW3Solution/HW3Project/obj/Debug/net6.0/ref/HW3Project.dll
+/Users/ryanhanson/Desktop/Projects Staged for Portfolio/CS366-HW3/HW3Solution/HW3Project/bin/Debug/net6.0/appsettings.Development.json
+/Users/ryanhanson/Desktop/Projects Staged for Portfolio/CS366-HW3/HW3Solution/HW3Project/bin/Debug/net6.0/appsettings.json
+/Users/ryanhanson/Desktop/Projects Staged for Portfolio/CS366-HW3/HW3Solution/HW3Project/bin/Debug/net6.0/global.json
+/Users/ryanhanson/Desktop/Projects Staged for Portfolio/CS366-HW3/HW3Solution/HW3Project/bin/Debug/net6.0/HW3Project.staticwebassets.runtime.json
+/Users/ryanhanson/Desktop/Projects Staged for Portfolio/CS366-HW3/HW3Solution/HW3Project/bin/Debug/net6.0/HW3Project
+/Users/ryanhanson/Desktop/Projects Staged for Portfolio/CS366-HW3/HW3Solution/HW3Project/bin/Debug/net6.0/HW3Project.deps.json
+/Users/ryanhanson/Desktop/Projects Staged for Portfolio/CS366-HW3/HW3Solution/HW3Project/bin/Debug/net6.0/HW3Project.runtimeconfig.json
+/Users/ryanhanson/Desktop/Projects Staged for Portfolio/CS366-HW3/HW3Solution/HW3Project/bin/Debug/net6.0/HW3Project.dll
+/Users/ryanhanson/Desktop/Projects Staged for Portfolio/CS366-HW3/HW3Solution/HW3Project/bin/Debug/net6.0/HW3Project.pdb
+/Users/ryanhanson/Desktop/Projects Staged for Portfolio/CS366-HW3/HW3Solution/HW3Project/obj/Debug/net6.0/HW3Project.csproj.AssemblyReference.cache
+/Users/ryanhanson/Desktop/Projects Staged for Portfolio/CS366-HW3/HW3Solution/HW3Project/obj/Debug/net6.0/HW3Project.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ryanhanson/Desktop/Projects Staged for Portfolio/CS366-HW3/HW3Solution/HW3Project/obj/Debug/net6.0/HW3Project.AssemblyInfoInputs.cache
+/Users/ryanhanson/Desktop/Projects Staged for Portfolio/CS366-HW3/HW3Solution/HW3Project/obj/Debug/net6.0/HW3Project.AssemblyInfo.cs
+/Users/ryanhanson/Desktop/Projects Staged for Portfolio/CS366-HW3/HW3Solution/HW3Project/obj/Debug/net6.0/HW3Project.csproj.CoreCompileInputs.cache
+/Users/ryanhanson/Desktop/Projects Staged for Portfolio/CS366-HW3/HW3Solution/HW3Project/obj/Debug/net6.0/HW3Project.MvcApplicationPartsAssemblyInfo.cache
+/Users/ryanhanson/Desktop/Projects Staged for Portfolio/CS366-HW3/HW3Solution/HW3Project/obj/Debug/net6.0/HW3Project.RazorAssemblyInfo.cache
+/Users/ryanhanson/Desktop/Projects Staged for Portfolio/CS366-HW3/HW3Solution/HW3Project/obj/Debug/net6.0/HW3Project.RazorAssemblyInfo.cs
+/Users/ryanhanson/Desktop/Projects Staged for Portfolio/CS366-HW3/HW3Solution/HW3Project/obj/Debug/net6.0/staticwebassets/msbuild.HW3Project.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/ryanhanson/Desktop/Projects Staged for Portfolio/CS366-HW3/HW3Solution/HW3Project/obj/Debug/net6.0/staticwebassets/msbuild.build.HW3Project.props
+/Users/ryanhanson/Desktop/Projects Staged for Portfolio/CS366-HW3/HW3Solution/HW3Project/obj/Debug/net6.0/staticwebassets/msbuild.buildMultiTargeting.HW3Project.props
+/Users/ryanhanson/Desktop/Projects Staged for Portfolio/CS366-HW3/HW3Solution/HW3Project/obj/Debug/net6.0/staticwebassets/msbuild.buildTransitive.HW3Project.props
+/Users/ryanhanson/Desktop/Projects Staged for Portfolio/CS366-HW3/HW3Solution/HW3Project/obj/Debug/net6.0/staticwebassets.pack.json
+/Users/ryanhanson/Desktop/Projects Staged for Portfolio/CS366-HW3/HW3Solution/HW3Project/obj/Debug/net6.0/staticwebassets.build.json
+/Users/ryanhanson/Desktop/Projects Staged for Portfolio/CS366-HW3/HW3Solution/HW3Project/obj/Debug/net6.0/staticwebassets.development.json
+/Users/ryanhanson/Desktop/Projects Staged for Portfolio/CS366-HW3/HW3Solution/HW3Project/obj/Debug/net6.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
+/Users/ryanhanson/Desktop/Projects Staged for Portfolio/CS366-HW3/HW3Solution/HW3Project/obj/Debug/net6.0/scopedcss/bundle/HW3Project.styles.css
+/Users/ryanhanson/Desktop/Projects Staged for Portfolio/CS366-HW3/HW3Solution/HW3Project/obj/Debug/net6.0/scopedcss/projectbundle/HW3Project.bundle.scp.css
+/Users/ryanhanson/Desktop/Projects Staged for Portfolio/CS366-HW3/HW3Solution/HW3Project/obj/Debug/net6.0/HW3Project.dll
+/Users/ryanhanson/Desktop/Projects Staged for Portfolio/CS366-HW3/HW3Solution/HW3Project/obj/Debug/net6.0/refint/HW3Project.dll
+/Users/ryanhanson/Desktop/Projects Staged for Portfolio/CS366-HW3/HW3Solution/HW3Project/obj/Debug/net6.0/HW3Project.pdb
+/Users/ryanhanson/Desktop/Projects Staged for Portfolio/CS366-HW3/HW3Solution/HW3Project/obj/Debug/net6.0/HW3Project.genruntimeconfig.cache
+/Users/ryanhanson/Desktop/Projects Staged for Portfolio/CS366-HW3/HW3Solution/HW3Project/obj/Debug/net6.0/ref/HW3Project.dll

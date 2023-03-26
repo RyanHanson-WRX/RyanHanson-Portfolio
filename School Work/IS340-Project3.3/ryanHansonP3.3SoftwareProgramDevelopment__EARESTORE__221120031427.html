@@ -1,0 +1,535 @@
+<html>
+<head><!--??DEBUG set table/td border to visualize layout -->
+<style> 
+table      { xxxborder: 1px solid red; }
+td         { XXXborder: 1px solid blue; }
+h1, h2     { text-align:bottom; font-family:sans-serif; XXXmargin-top:0; margin-bottom:-0.5em; padding-bottom:0; }
+h3         { text-align:bottom; font-family:sans-serif; XXXmargin-top:0; margin-bottom:0; padding-bottom:0; }
+body       { font-family:sans-serif }
+textarea   { font-family:monospace; }
+</style>
+<title>EAR&#275; Studio XSLerator</title>
+</head>
+<body>
+<!-- 
+  EAReStore FOCUS:    Ryan Hanson P3.3 Software Program Development
+  EAReStore VERSION:  221120031427 (2022.11.20 03:14)
+  EAReStore BASED ON: 221113020316 (2022.11.13 02:03)
+-->
+<h1>EAR&#275; Studio <em>XSLerator</em></h1>
+<h3>Information Systems Design: Develop, Implement, Apply with XPath/XSL</h3>
+<table>
+<tr valign="TOP"><td>
+<table>
+<table><tr valign="BOTTOM"><td>
+<td>
+<tr><td colspan="2">
+<form action="/cgi-bin/earestxsl.cgi" method="post">
+<input type="hidden" name="eare"           value="# Focus:
+Ryan Hanson P3.3 Software Program Development: -The development of a given software program
+
+# Data entities:
+ProgramDevelopment(#id:PROJ_NO!, startDate:DATE!, completionDate:DATE!, employs&gt;DevTeam+, produces&gt;Program!) /
+    -Project for which a program is to be developed, DATE in format: &#39yyyy-mm-dd&#39
+5576, 2022-10-22, 2022-11-6, n/a, myProgram1
+5586, 2022-11-5, 2023-01-14, n/a, XProgram
+
+SoftwareDeveloper(#id:DEV_NO!, firstName:NAME?, lastName:NAME!, dateOfBirth:DATE!, education:TEXT?, uses&gt;Computer!, &gt;DevTeam!) /
+    -Person who works as part of a DevTeam, DATE in format: &#39yyyy-mm-dd&#39
+1756, Ryan, Hanson, 2002-04-02, Student, RyansMac, 4467
+1757, Steve, Jobs, 1955-02-24, NULL, StevesMac, 4467
+1758, Bill, Gates, 1955-10-28, NULL, BillsPC, 4467
+1856, Elon, Musk, 1971-06-28, Graduate, ElonsPC, 4477
+1857, Joe, Rogan, 1967-08-11, NULL, JoesMac, 4477
+
+
+DevTeam(#id:TEAM_NO!, teamName:NAME!, devCount:DEV_COUNT!, uses&gt;Repository!, recruits&gt;SoftwareDeveloper+, creates&gt;Program!, &gt;ProgramDevelopment!) /
+    -Team of SoftwareDevelopers who work on the same project
+4467, TeamOne, 3, MyRepo1, n/a, MyProgram1, 5576
+4477, TeamX, 2, SpaceXRepo, n/a, XProgram, 5586
+
+Computer(#computerName:COMP_NAME!, OS:TEXT!, CPU:TEXT!, storageSizeGB:GIGABYTE!, &gt;SoftwareDeveloper!, &gt;SourceCodeEditor+, &gt;Repository!) /
+    -Computer of a SoftwareDeveloper on which they work on
+RyansMac, MacOS, M1, 250, 1756, n/a, MyRepo1
+StevesMac, MacOS, M1 Pro, 500, 1757, n/a, MyRepo1
+BillsPC, Windows, Intel I9, 550, 1758, n/a, MyRepo1
+ElonsPC, Linux, Intel I9, 720, 1856, n/a, SpaceXRepo
+JoesMac, MacOS, M2, 450, 1857, n/a, SpaceXRepo
+
+SourceCodeEditor(#id:SOURCECODE_ID!, editorName:EDITOR_NAME!, workingFolder:PATH!, installed on&gt;Computer!, edits&gt;File+) /
+    -SourceCodeEditor in which a SoftwareDeveloper codes with, PATH must use at least one &#39/&#39
+1122, VSCode, /Desktop/MyRepo1, RyansMac, n/a
+1123, Xcode, /Desktop/MyRepo1, StevesMac, n/a
+1124, VSCode, /Desktop/WorkFolder/MyRepo1, BillsPC, n/a
+1131, VSCode, /home/ElonMusk/Desktop/SpaceXRepo, ElonsPC, n/a
+1132, Atom, /Desktop/SpaceXRepo, JoesMac, n/a
+
+File(#nameOfFile:FILE_NAME!, [programmingLanguage:LANG_NAME?, fileType:EXTENSION!], &gt;SourceCodeEditor!, &gt;Program!) /
+    -File containing code that builds a program
+MyProg1CS, CSHARP, .cs, 1122, MyProgram1
+MyProg1Index, HTML, .html, 1123, MyProgram1
+MyProg1Styles, CSS, .css, 1123, MyProgram1
+MyProg1JS, JavaScript, .js, 1124, MyProgram1
+XProgCS, CSHARP, .cs, 1131, XProgram
+XProgIndex, HTML, .html, 1131, XProgram
+XProgStyles, CSS, .css, 1132, XProgram
+
+Repository(#repoName:REPO_NAME!, repoDictator:DICT_NAME!, cloned on&gt;Computer+, &gt;DevTeam!, &gt;Program!) /
+    -Directory for DevTeam to push to and pull from code for a Program
+MyRepo1, Ryan Hanson, n/a, 4467, MyProgram1
+SpaceXRepo, Elon Musk, n/a, 4477, XProgram
+
+Program(#programName:PROG_NAME!, fileCount:FILE_COUNT!, &gt;DevTeam!, pushed to&gt;Repository!, made of&gt;File+, &gt;ProgramDevelopment!) /
+    -Software designed for a project reflected by SoftwareDevelopment
+MyProgram1, 4, 4467, MyRepo1, n/a, 5576
+XProgram, 3, 4477, SpaceXRepo, n/a, 5586"/>           <!-- HTML-encoded -->
+<input type="hidden" name="xml"            value=""/>            <!-- HTML-encoded -->
+<input type="hidden" name="src_toApply"    value="EARe"/>
+<input type="hidden" name="xpath"          value="//attribute"/>          <!-- HTML-encoded -->
+<input type="hidden" name="xsl_XtoApply"   value="XSL_STANDARD"/>
+<input type="hidden" name="xsl"            value="<?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;
+<xsl:stylesheet version=&#34;1.0&#34; xmlns:xsl=&#34;http://www.w3.org/1999/XSL/Transform&#34;&gt;
+<!-- 
+  Welcome to EARe Studio! 
+  - Your custom XSL transform goes here, with the &#34;Transform Settings&#34; below
+  - Use &#34;Design/Data XML&#34; to enter custom XML...
+  ...or &#34;EARe Design\/Data&#34; to apply a sample design or data
+  ...or &#34;Extract with XPath&#34; to apply an XPath as-is or &#34;copy/value-of&#34;
+  ...or choose a &#34;Standard Transform&#34;!
+--&gt;
+<xsl:output method=&#34;html&#34;/&gt;
+<xsl:template match=&#34;/&#34;&gt;
+  <xsl:apply-templates select=&#34;//eareDesign/focus&#34;/&gt;
+</xsl:template&gt;
+<xsl:template match=&#34;focus&#34;&gt;
+<html&gt;
+  <h1&gt;Welcome to <em&gt;<xsl:value-of select=&#34;.&#34;/&gt;</em&gt;!</h1&gt;
+</html&gt;
+</xsl:template&gt;
+</xsl:stylesheet&gt;"/>            <!-- HTML-encoded -->
+<input type="hidden" name="xsl_stdSpecs"   value="tableData_SQL.xsl;sql"/>
+<input type="hidden" name="xsl_params"     value="nullValue NULL
+naValue n/a
+dataTypes PROJ_NO=CHAR(4);DATE=DATE;TEAM_NO=CHAR(4);PROG_NAME=VARCHAR(50);DEV_NO=CHAR(4);NAME=VARCHAR(50);TEXT=VARCHAR(100);COMP_NAME=VARCHAR(50);DEV_COUNT=CHAR(4);REPO_NAME=VARCHAR(50);DEV_NO=CHAR(4);GIGABYTE=CHAR(10);SOURCECODE_ID=CHAR(4);EDITOR_NAME=VARCHAR(50);PATH=VARCHAR(100);FILE_NAME=VARCHAR(50);LANG_NAME=VARCHAR(50);EXTENSION=CHAR(15);DICT_NAME=VARCHAR(50);FILE_COUNT=CHAR(10);"/>     <!-- HTML-encoded -->
+<input type="hidden" name="xpath_results"  value=""/>  <!-- HTML-encoded -->
+<input type="hidden" name="xsl_results"    value=""/>    <!-- HTML-encoded -->
+<input type="hidden" name="showEARe"       value=""/>
+<input type="hidden" name="showXML"        value=""/>
+<input type="hidden" name="showWARN"       value=""/>
+<input type="hidden" name="showSUM"        value=""/>
+<input type="hidden" name="showUCD"        value="Show"/>
+<input type="hidden" name="showUCT"        value="Show"/>
+<input type="hidden" name="showCXD"        value=""/>
+<input type="hidden" name="cxdDir"         value=""/>
+<input type="hidden" name="showERD"        value="Show"/>
+<input type="hidden" name="erdDir"         value=""/>
+<input type="hidden" name="showData"       value="YES"/>
+<input type="hidden" name="showDD"         value="Show"/>
+<input type="hidden" name="showDT"         value="Show"/>
+<input type="hidden" name="showXPath"      value=""/>
+<input type="hidden" name="showXSL"        value=""/>
+<input type="hidden" name="showXresXPath"  value=""/>
+<input type="hidden" name="showXresCust"   value=""/>
+<input type="hidden" name="showXresStd"    value=""/>
+<input type="hidden" name="showXresAsWeb"  value=""/>
+
+<input type="hidden" name="earestoreVersion"  value="221120031427 (2022.11.20 03:14)"/>
+<input type="hidden" name="earestoreBasedOn"  value="221113020316 (2022.11.13 02:03)"/>
+
+<h3>EAReStore Preview</h3>
+<textarea readonly spellcheck="false" name="eare" cols="100" rows="41" required># Focus:
+Ryan Hanson P3.3 Software Program Development: -The development of a given software program
+
+# Data entities:
+ProgramDevelopment(#id:PROJ_NO!, startDate:DATE!, completionDate:DATE!, employs>DevTeam+, produces>Program!) /
+    -Project for which a program is to be developed, DATE in format: 'yyyy-mm-dd'
+5576, 2022-10-22, 2022-11-6, n/a, myProgram1
+5586, 2022-11-5, 2023-01-14, n/a, XProgram
+
+SoftwareDeveloper(#id:DEV_NO!, firstName:NAME?, lastName:NAME!, dateOfBirth:DATE!, education:TEXT?, uses>Computer!, >DevTeam!) /
+    -Person who works as part of a DevTeam, DATE in format: 'yyyy-mm-dd'
+1756, Ryan, Hanson, 2002-04-02, Student, RyansMac, 4467
+1757, Steve, Jobs, 1955-02-24, NULL, StevesMac, 4467
+1758, Bill, Gates, 1955-10-28, NULL, BillsPC, 4467
+1856, Elon, Musk, 1971-06-28, Graduate, ElonsPC, 4477
+1857, Joe, Rogan, 1967-08-11, NULL, JoesMac, 4477
+
+
+DevTeam(#id:TEAM_NO!, teamName:NAME!, devCount:DEV_COUNT!, uses>Repository!, recruits>SoftwareDeveloper+, creates>Program!, >ProgramDevelopment!) /
+    -Team of SoftwareDevelopers who work on the same project
+4467, TeamOne, 3, MyRepo1, n/a, MyProgram1, 5576
+4477, TeamX, 2, SpaceXRepo, n/a, XProgram, 5586
+
+Computer(#computerName:COMP_NAME!, OS:TEXT!, CPU:TEXT!, storageSizeGB:GIGABYTE!, >SoftwareDeveloper!, >SourceCodeEditor+, >Repository!) /
+    -Computer of a SoftwareDeveloper on which they work on
+RyansMac, MacOS, M1, 250, 1756, n/a, MyRepo1
+StevesMac, MacOS, M1 Pro, 500, 1757, n/a, MyRepo1
+BillsPC, Windows, Intel I9, 550, 1758, n/a, MyRepo1
+ElonsPC, Linux, Intel I9, 720, 1856, n/a, SpaceXRepo
+JoesMac, MacOS, M2, 450, 1857, n/a, SpaceXRepo
+
+SourceCodeEditor(#id:SOURCECODE_ID!, editorName:EDITOR_NAME!, workingFolder:PATH!, installed on>Computer!, edits>File+) /
+    -SourceCodeEditor in which a SoftwareDeveloper codes with, PATH must use at least one '/'
+1122, VSCode, /Desktop/MyRepo1, RyansMac, n/a
+1123, Xcode, /Desktop/MyRepo1, StevesMac, n/a
+1124, VSCode, /Desktop/WorkFolder/MyRepo1, BillsPC, n/a
+1131, VSCode, /home/ElonMusk/Desktop/SpaceXRepo, ElonsPC, n/a
+1132, Atom, /Desktop/SpaceXRepo, JoesMac, n/a
+
+File(#nameOfFile:FILE_NAME!, [programmingLanguage:LANG_NAME?, fileType:EXTENSION!], >SourceCodeEditor!, >Program!) /
+    -File containing code that builds a program
+MyProg1CS, CSHARP, .cs, 1122, MyProgram1
+MyProg1Index, HTML, .html, 1123, MyProgram1
+MyProg1Styles, CSS, .css, 1123, MyProgram1
+MyProg1JS, JavaScript, .js, 1124, MyProgram1
+XProgCS, CSHARP, .cs, 1131, XProgram
+XProgIndex, HTML, .html, 1131, XProgram
+XProgStyles, CSS, .css, 1132, XProgram
+
+Repository(#repoName:REPO_NAME!, repoDictator:DICT_NAME!, cloned on>Computer+, >DevTeam!, >Program!) /
+    -Directory for DevTeam to push to and pull from code for a Program
+MyRepo1, Ryan Hanson, n/a, 4467, MyProgram1
+SpaceXRepo, Elon Musk, n/a, 4477, XProgram
+
+Program(#programName:PROG_NAME!, fileCount:FILE_COUNT!, >DevTeam!, pushed to>Repository!, made of>File+, >ProgramDevelopment!) /
+    -Software designed for a project reflected by SoftwareDevelopment
+MyProgram1, 4, 4467, MyRepo1, n/a, 5576
+XProgram, 3, 4477, SpaceXRepo, n/a, 5586</textarea>
+</div>
+<b><pre>
+FOCUS:    Ryan Hanson P3.3 Software Program Development
+VERSION:  221120031427 (2022.11.20 03:14)
+BASED ON: 221113020316 (2022.11.13 02:03)
+</pre></b>
+<div style="float;text-align:center">
+<button name="src_toApply" value="EAReStore" type="submit" formaction='http://52.39.17.151:80/cgi-bin/earestxsl.cgi'>Apply EAReStore</button>
+</div>
+</form>
+
+<form action="/cgi-bin/earestxsl.cgi" method="post">
+<input type="hidden" name="eare"           value="# Focus:
+Ryan Hanson P3.3 Software Program Development: -The development of a given software program
+
+# Data entities:
+ProgramDevelopment(#id:PROJ_NO!, startDate:DATE!, completionDate:DATE!, employs&gt;DevTeam+, produces&gt;Program!) /
+    -Project for which a program is to be developed, DATE in format: &#39yyyy-mm-dd&#39
+5576, 2022-10-22, 2022-11-6, n/a, myProgram1
+5586, 2022-11-5, 2023-01-14, n/a, XProgram
+
+SoftwareDeveloper(#id:DEV_NO!, firstName:NAME?, lastName:NAME!, dateOfBirth:DATE!, education:TEXT?, uses&gt;Computer!, &gt;DevTeam!) /
+    -Person who works as part of a DevTeam, DATE in format: &#39yyyy-mm-dd&#39
+1756, Ryan, Hanson, 2002-04-02, Student, RyansMac, 4467
+1757, Steve, Jobs, 1955-02-24, NULL, StevesMac, 4467
+1758, Bill, Gates, 1955-10-28, NULL, BillsPC, 4467
+1856, Elon, Musk, 1971-06-28, Graduate, ElonsPC, 4477
+1857, Joe, Rogan, 1967-08-11, NULL, JoesMac, 4477
+
+
+DevTeam(#id:TEAM_NO!, teamName:NAME!, devCount:DEV_COUNT!, uses&gt;Repository!, recruits&gt;SoftwareDeveloper+, creates&gt;Program!, &gt;ProgramDevelopment!) /
+    -Team of SoftwareDevelopers who work on the same project
+4467, TeamOne, 3, MyRepo1, n/a, MyProgram1, 5576
+4477, TeamX, 2, SpaceXRepo, n/a, XProgram, 5586
+
+Computer(#computerName:COMP_NAME!, OS:TEXT!, CPU:TEXT!, storageSizeGB:GIGABYTE!, &gt;SoftwareDeveloper!, &gt;SourceCodeEditor+, &gt;Repository!) /
+    -Computer of a SoftwareDeveloper on which they work on
+RyansMac, MacOS, M1, 250, 1756, n/a, MyRepo1
+StevesMac, MacOS, M1 Pro, 500, 1757, n/a, MyRepo1
+BillsPC, Windows, Intel I9, 550, 1758, n/a, MyRepo1
+ElonsPC, Linux, Intel I9, 720, 1856, n/a, SpaceXRepo
+JoesMac, MacOS, M2, 450, 1857, n/a, SpaceXRepo
+
+SourceCodeEditor(#id:SOURCECODE_ID!, editorName:EDITOR_NAME!, workingFolder:PATH!, installed on&gt;Computer!, edits&gt;File+) /
+    -SourceCodeEditor in which a SoftwareDeveloper codes with, PATH must use at least one &#39/&#39
+1122, VSCode, /Desktop/MyRepo1, RyansMac, n/a
+1123, Xcode, /Desktop/MyRepo1, StevesMac, n/a
+1124, VSCode, /Desktop/WorkFolder/MyRepo1, BillsPC, n/a
+1131, VSCode, /home/ElonMusk/Desktop/SpaceXRepo, ElonsPC, n/a
+1132, Atom, /Desktop/SpaceXRepo, JoesMac, n/a
+
+File(#nameOfFile:FILE_NAME!, [programmingLanguage:LANG_NAME?, fileType:EXTENSION!], &gt;SourceCodeEditor!, &gt;Program!) /
+    -File containing code that builds a program
+MyProg1CS, CSHARP, .cs, 1122, MyProgram1
+MyProg1Index, HTML, .html, 1123, MyProgram1
+MyProg1Styles, CSS, .css, 1123, MyProgram1
+MyProg1JS, JavaScript, .js, 1124, MyProgram1
+XProgCS, CSHARP, .cs, 1131, XProgram
+XProgIndex, HTML, .html, 1131, XProgram
+XProgStyles, CSS, .css, 1132, XProgram
+
+Repository(#repoName:REPO_NAME!, repoDictator:DICT_NAME!, cloned on&gt;Computer+, &gt;DevTeam!, &gt;Program!) /
+    -Directory for DevTeam to push to and pull from code for a Program
+MyRepo1, Ryan Hanson, n/a, 4467, MyProgram1
+SpaceXRepo, Elon Musk, n/a, 4477, XProgram
+
+Program(#programName:PROG_NAME!, fileCount:FILE_COUNT!, &gt;DevTeam!, pushed to&gt;Repository!, made of&gt;File+, &gt;ProgramDevelopment!) /
+    -Software designed for a project reflected by SoftwareDevelopment
+MyProgram1, 4, 4467, MyRepo1, n/a, 5576
+XProgram, 3, 4477, SpaceXRepo, n/a, 5586"/>           <!-- HTML-encoded -->
+<input type="hidden" name="xml"            value=""/>            <!-- HTML-encoded -->
+<input type="hidden" name="src_toApply"    value="EARe"/>
+<input type="hidden" name="xpath"          value="//attribute"/>          <!-- HTML-encoded -->
+<input type="hidden" name="xsl_XtoApply"   value="XSL_STANDARD"/>
+<input type="hidden" name="xsl"            value="<?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;
+<xsl:stylesheet version=&#34;1.0&#34; xmlns:xsl=&#34;http://www.w3.org/1999/XSL/Transform&#34;&gt;
+<!-- 
+  Welcome to EARe Studio! 
+  - Your custom XSL transform goes here, with the &#34;Transform Settings&#34; below
+  - Use &#34;Design/Data XML&#34; to enter custom XML...
+  ...or &#34;EARe Design\/Data&#34; to apply a sample design or data
+  ...or &#34;Extract with XPath&#34; to apply an XPath as-is or &#34;copy/value-of&#34;
+  ...or choose a &#34;Standard Transform&#34;!
+--&gt;
+<xsl:output method=&#34;html&#34;/&gt;
+<xsl:template match=&#34;/&#34;&gt;
+  <xsl:apply-templates select=&#34;//eareDesign/focus&#34;/&gt;
+</xsl:template&gt;
+<xsl:template match=&#34;focus&#34;&gt;
+<html&gt;
+  <h1&gt;Welcome to <em&gt;<xsl:value-of select=&#34;.&#34;/&gt;</em&gt;!</h1&gt;
+</html&gt;
+</xsl:template&gt;
+</xsl:stylesheet&gt;"/>            <!-- HTML-encoded -->
+<input type="hidden" name="xsl_stdSpecs"   value="tableData_SQL.xsl;sql"/>
+<input type="hidden" name="xsl_params"     value="nullValue NULL
+naValue n/a
+dataTypes PROJ_NO=CHAR(4);DATE=DATE;TEAM_NO=CHAR(4);PROG_NAME=VARCHAR(50);DEV_NO=CHAR(4);NAME=VARCHAR(50);TEXT=VARCHAR(100);COMP_NAME=VARCHAR(50);DEV_COUNT=CHAR(4);REPO_NAME=VARCHAR(50);DEV_NO=CHAR(4);GIGABYTE=CHAR(10);SOURCECODE_ID=CHAR(4);EDITOR_NAME=VARCHAR(50);PATH=VARCHAR(100);FILE_NAME=VARCHAR(50);LANG_NAME=VARCHAR(50);EXTENSION=CHAR(15);DICT_NAME=VARCHAR(50);FILE_COUNT=CHAR(10);"/>     <!-- HTML-encoded -->
+<input type="hidden" name="xpath_results"  value=""/>  <!-- HTML-encoded -->
+<input type="hidden" name="xsl_results"    value=""/>    <!-- HTML-encoded -->
+<input type="hidden" name="showEARe"       value=""/>
+<input type="hidden" name="showXML"        value=""/>
+<input type="hidden" name="showWARN"       value=""/>
+<input type="hidden" name="showSUM"        value=""/>
+<input type="hidden" name="showUCD"        value="Show"/>
+<input type="hidden" name="showUCT"        value="Show"/>
+<input type="hidden" name="showCXD"        value=""/>
+<input type="hidden" name="cxdDir"         value=""/>
+<input type="hidden" name="showERD"        value="Show"/>
+<input type="hidden" name="erdDir"         value=""/>
+<input type="hidden" name="showData"       value="YES"/>
+<input type="hidden" name="showDD"         value="Show"/>
+<input type="hidden" name="showDT"         value="Show"/>
+<input type="hidden" name="showXPath"      value=""/>
+<input type="hidden" name="showXSL"        value=""/>
+<input type="hidden" name="showXresXPath"  value=""/>
+<input type="hidden" name="showXresCust"   value=""/>
+<input type="hidden" name="showXresStd"    value=""/>
+<input type="hidden" name="showXresAsWeb"  value=""/>
+
+<input type="hidden" name="earestoreVersion"  value="221120031427 (2022.11.20 03:14)"/>
+<input type="hidden" name="earestoreBasedOn"  value="221113020316 (2022.11.13 02:03)"/>
+
+<h2>XSL Transform Result: Standard<!--h2 ahead--><br/>
+</h2>
+</form>
+<textarea spellcheck="false" name="xsl_results" cols="100" rows="30">
+/*  Created by tableData_SQL 221120031427
+    Not-applicable (n/a) data pattern (naValue):
+      n/a
+    No-data (null) data value (nullValue):
+      NULL
+    Separator for composite ID values combined into single ID value (idSep):
+      | ("bar")
+*/
+USE Ryan_Hanson_P3.3_Software_Program_Development;
+
+/*  ProgramDevelopment( id, startDate, completionDate, [N/A:DevTeam], Program )
+*/
+INSERT INTO ProgramDevelopment VALUES (
+  5576, '2022-10-22', '2022-11-6', 'myProgram1' );
+INSERT INTO ProgramDevelopment VALUES (
+  5586, '2022-11-5', '2023-01-14', 'XProgram' );
+
+/*  SoftwareDeveloper( id, firstName, lastName, dateOfBirth, education, Computer, DevTeam )
+*/
+INSERT INTO SoftwareDeveloper VALUES (
+  1756, 'Ryan', 'Hanson', '2002-04-02', 'Student', 'RyansMac', 4467 );
+INSERT INTO SoftwareDeveloper VALUES (
+  1757, 'Steve', 'Jobs', '1955-02-24', NULL, 'StevesMac', 4467 );
+INSERT INTO SoftwareDeveloper VALUES (
+  1758, 'Bill', 'Gates', '1955-10-28', NULL, 'BillsPC', 4467 );
+INSERT INTO SoftwareDeveloper VALUES (
+  1856, 'Elon', 'Musk', '1971-06-28', 'Graduate', 'ElonsPC', 4477 );
+INSERT INTO SoftwareDeveloper VALUES (
+  1857, 'Joe', 'Rogan', '1967-08-11', NULL, 'JoesMac', 4477 );
+
+/*  DevTeam( id, teamName, devCount, Repository, [N/A:SoftwareDeveloper], Program, ProgramDevelopment )
+*/
+INSERT INTO DevTeam VALUES (
+  4467, 'TeamOne', 3, 'MyRepo1', 'MyProgram1', 5576 );
+INSERT INTO DevTeam VALUES (
+  4477, 'TeamX', 2, 'SpaceXRepo', 'XProgram', 5586 );
+
+/*  Computer( computerName, OS, CPU, storageSizeGB, SoftwareDeveloper, [N/A:SourceCodeEditor], Repository )
+*/
+INSERT INTO Computer VALUES (
+  'RyansMac', 'MacOS', 'M1', 250, 1756, 'MyRepo1' );
+INSERT INTO Computer VALUES (
+  'StevesMac', 'MacOS', 'M1 Pro', 500, 1757, 'MyRepo1' );
+INSERT INTO Computer VALUES (
+  'BillsPC', 'Windows', 'Intel I9', 550, 1758, 'MyRepo1' );
+INSERT INTO Computer VALUES (
+  'ElonsPC', 'Linux', 'Intel I9', 720, 1856, 'SpaceXRepo' );
+INSERT INTO Computer VALUES (
+  'JoesMac', 'MacOS', 'M2', 450, 1857, 'SpaceXRepo' );
+
+/*  SourceCodeEditor( id, editorName, workingFolder, Computer, [N/A:File] )
+*/
+INSERT INTO SourceCodeEditor VALUES (
+  1122, 'VSCode', '/Desktop/MyRepo1', 'RyansMac' );
+INSERT INTO SourceCodeEditor VALUES (
+  1123, 'Xcode', '/Desktop/MyRepo1', 'StevesMac' );
+INSERT INTO SourceCodeEditor VALUES (
+  1124, 'VSCode', '/Desktop/WorkFolder/MyRepo1', 'BillsPC' );
+INSERT INTO SourceCodeEditor VALUES (
+  1131, 'VSCode', '/home/ElonMusk/Desktop/SpaceXRepo', 'ElonsPC' );
+INSERT INTO SourceCodeEditor VALUES (
+  1132, 'Atom', '/Desktop/SpaceXRepo', 'JoesMac' );
+
+/*  File( nameOfFile, programmingLanguage, fileType, SourceCodeEditor, Program )
+*/
+INSERT INTO File VALUES (
+  'MyProg1CS', 'CSHARP', '.cs', 1122, 'MyProgram1' );
+INSERT INTO File VALUES (
+  'MyProg1Index', 'HTML', '.html', 1123, 'MyProgram1' );
+INSERT INTO File VALUES (
+  'MyProg1Styles', 'CSS', '.css', 1123, 'MyProgram1' );
+INSERT INTO File VALUES (
+  'MyProg1JS', 'JavaScript', '.js', 1124, 'MyProgram1' );
+INSERT INTO File VALUES (
+  'XProgCS', 'CSHARP', '.cs', 1131, 'XProgram' );
+INSERT INTO File VALUES (
+  'XProgIndex', 'HTML', '.html', 1131, 'XProgram' );
+INSERT INTO File VALUES (
+  'XProgStyles', 'CSS', '.css', 1132, 'XProgram' );
+
+/*  Repository( repoName, repoDictator, [N/A:Computer], DevTeam, Program )
+*/
+INSERT INTO Repository VALUES (
+  'MyRepo1', 'Ryan Hanson', 4467, 'MyProgram1' );
+INSERT INTO Repository VALUES (
+  'SpaceXRepo', 'Elon Musk', 4477, 'XProgram' );
+
+/*  Program( programName, fileCount, DevTeam, Repository, [N/A:File], ProgramDevelopment )
+*/
+INSERT INTO Program VALUES (
+  'MyProgram1', 4, 4467, 'MyRepo1', 5576 );
+INSERT INTO Program VALUES (
+  'XProgram', 3, 4477, 'SpaceXRepo', 5586 );
+</textarea>
+
+<form action="/cgi-bin/earestxsl.cgi" method="post">
+<input type="hidden" name="eare"           value="# Focus:
+Ryan Hanson P3.3 Software Program Development: -The development of a given software program
+
+# Data entities:
+ProgramDevelopment(#id:PROJ_NO!, startDate:DATE!, completionDate:DATE!, employs&gt;DevTeam+, produces&gt;Program!) /
+    -Project for which a program is to be developed, DATE in format: &#39yyyy-mm-dd&#39
+5576, 2022-10-22, 2022-11-6, n/a, myProgram1
+5586, 2022-11-5, 2023-01-14, n/a, XProgram
+
+SoftwareDeveloper(#id:DEV_NO!, firstName:NAME?, lastName:NAME!, dateOfBirth:DATE!, education:TEXT?, uses&gt;Computer!, &gt;DevTeam!) /
+    -Person who works as part of a DevTeam, DATE in format: &#39yyyy-mm-dd&#39
+1756, Ryan, Hanson, 2002-04-02, Student, RyansMac, 4467
+1757, Steve, Jobs, 1955-02-24, NULL, StevesMac, 4467
+1758, Bill, Gates, 1955-10-28, NULL, BillsPC, 4467
+1856, Elon, Musk, 1971-06-28, Graduate, ElonsPC, 4477
+1857, Joe, Rogan, 1967-08-11, NULL, JoesMac, 4477
+
+
+DevTeam(#id:TEAM_NO!, teamName:NAME!, devCount:DEV_COUNT!, uses&gt;Repository!, recruits&gt;SoftwareDeveloper+, creates&gt;Program!, &gt;ProgramDevelopment!) /
+    -Team of SoftwareDevelopers who work on the same project
+4467, TeamOne, 3, MyRepo1, n/a, MyProgram1, 5576
+4477, TeamX, 2, SpaceXRepo, n/a, XProgram, 5586
+
+Computer(#computerName:COMP_NAME!, OS:TEXT!, CPU:TEXT!, storageSizeGB:GIGABYTE!, &gt;SoftwareDeveloper!, &gt;SourceCodeEditor+, &gt;Repository!) /
+    -Computer of a SoftwareDeveloper on which they work on
+RyansMac, MacOS, M1, 250, 1756, n/a, MyRepo1
+StevesMac, MacOS, M1 Pro, 500, 1757, n/a, MyRepo1
+BillsPC, Windows, Intel I9, 550, 1758, n/a, MyRepo1
+ElonsPC, Linux, Intel I9, 720, 1856, n/a, SpaceXRepo
+JoesMac, MacOS, M2, 450, 1857, n/a, SpaceXRepo
+
+SourceCodeEditor(#id:SOURCECODE_ID!, editorName:EDITOR_NAME!, workingFolder:PATH!, installed on&gt;Computer!, edits&gt;File+) /
+    -SourceCodeEditor in which a SoftwareDeveloper codes with, PATH must use at least one &#39/&#39
+1122, VSCode, /Desktop/MyRepo1, RyansMac, n/a
+1123, Xcode, /Desktop/MyRepo1, StevesMac, n/a
+1124, VSCode, /Desktop/WorkFolder/MyRepo1, BillsPC, n/a
+1131, VSCode, /home/ElonMusk/Desktop/SpaceXRepo, ElonsPC, n/a
+1132, Atom, /Desktop/SpaceXRepo, JoesMac, n/a
+
+File(#nameOfFile:FILE_NAME!, [programmingLanguage:LANG_NAME?, fileType:EXTENSION!], &gt;SourceCodeEditor!, &gt;Program!) /
+    -File containing code that builds a program
+MyProg1CS, CSHARP, .cs, 1122, MyProgram1
+MyProg1Index, HTML, .html, 1123, MyProgram1
+MyProg1Styles, CSS, .css, 1123, MyProgram1
+MyProg1JS, JavaScript, .js, 1124, MyProgram1
+XProgCS, CSHARP, .cs, 1131, XProgram
+XProgIndex, HTML, .html, 1131, XProgram
+XProgStyles, CSS, .css, 1132, XProgram
+
+Repository(#repoName:REPO_NAME!, repoDictator:DICT_NAME!, cloned on&gt;Computer+, &gt;DevTeam!, &gt;Program!) /
+    -Directory for DevTeam to push to and pull from code for a Program
+MyRepo1, Ryan Hanson, n/a, 4467, MyProgram1
+SpaceXRepo, Elon Musk, n/a, 4477, XProgram
+
+Program(#programName:PROG_NAME!, fileCount:FILE_COUNT!, &gt;DevTeam!, pushed to&gt;Repository!, made of&gt;File+, &gt;ProgramDevelopment!) /
+    -Software designed for a project reflected by SoftwareDevelopment
+MyProgram1, 4, 4467, MyRepo1, n/a, 5576
+XProgram, 3, 4477, SpaceXRepo, n/a, 5586"/>           <!-- HTML-encoded -->
+<input type="hidden" name="xml"            value=""/>            <!-- HTML-encoded -->
+<input type="hidden" name="src_toApply"    value="EARe"/>
+<input type="hidden" name="xpath"          value="//attribute"/>          <!-- HTML-encoded -->
+<input type="hidden" name="xsl_XtoApply"   value="XSL_STANDARD"/>
+<input type="hidden" name="xsl"            value="<?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;
+<xsl:stylesheet version=&#34;1.0&#34; xmlns:xsl=&#34;http://www.w3.org/1999/XSL/Transform&#34;&gt;
+<!-- 
+  Welcome to EARe Studio! 
+  - Your custom XSL transform goes here, with the &#34;Transform Settings&#34; below
+  - Use &#34;Design/Data XML&#34; to enter custom XML...
+  ...or &#34;EARe Design\/Data&#34; to apply a sample design or data
+  ...or &#34;Extract with XPath&#34; to apply an XPath as-is or &#34;copy/value-of&#34;
+  ...or choose a &#34;Standard Transform&#34;!
+--&gt;
+<xsl:output method=&#34;html&#34;/&gt;
+<xsl:template match=&#34;/&#34;&gt;
+  <xsl:apply-templates select=&#34;//eareDesign/focus&#34;/&gt;
+</xsl:template&gt;
+<xsl:template match=&#34;focus&#34;&gt;
+<html&gt;
+  <h1&gt;Welcome to <em&gt;<xsl:value-of select=&#34;.&#34;/&gt;</em&gt;!</h1&gt;
+</html&gt;
+</xsl:template&gt;
+</xsl:stylesheet&gt;"/>            <!-- HTML-encoded -->
+<input type="hidden" name="xsl_stdSpecs"   value="tableData_SQL.xsl;sql"/>
+<input type="hidden" name="xsl_params"     value="nullValue NULL
+naValue n/a
+dataTypes PROJ_NO=CHAR(4);DATE=DATE;TEAM_NO=CHAR(4);PROG_NAME=VARCHAR(50);DEV_NO=CHAR(4);NAME=VARCHAR(50);TEXT=VARCHAR(100);COMP_NAME=VARCHAR(50);DEV_COUNT=CHAR(4);REPO_NAME=VARCHAR(50);DEV_NO=CHAR(4);GIGABYTE=CHAR(10);SOURCECODE_ID=CHAR(4);EDITOR_NAME=VARCHAR(50);PATH=VARCHAR(100);FILE_NAME=VARCHAR(50);LANG_NAME=VARCHAR(50);EXTENSION=CHAR(15);DICT_NAME=VARCHAR(50);FILE_COUNT=CHAR(10);"/>     <!-- HTML-encoded -->
+<input type="hidden" name="xpath_results"  value=""/>  <!-- HTML-encoded -->
+<input type="hidden" name="xsl_results"    value=""/>    <!-- HTML-encoded -->
+<input type="hidden" name="showEARe"       value=""/>
+<input type="hidden" name="showXML"        value=""/>
+<input type="hidden" name="showWARN"       value=""/>
+<input type="hidden" name="showSUM"        value=""/>
+<input type="hidden" name="showUCD"        value="Show"/>
+<input type="hidden" name="showUCT"        value="Show"/>
+<input type="hidden" name="showCXD"        value=""/>
+<input type="hidden" name="cxdDir"         value=""/>
+<input type="hidden" name="showERD"        value="Show"/>
+<input type="hidden" name="erdDir"         value=""/>
+<input type="hidden" name="showData"       value="YES"/>
+<input type="hidden" name="showDD"         value="Show"/>
+<input type="hidden" name="showDT"         value="Show"/>
+<input type="hidden" name="showXPath"      value=""/>
+<input type="hidden" name="showXSL"        value=""/>
+<input type="hidden" name="showXresXPath"  value=""/>
+<input type="hidden" name="showXresCust"   value=""/>
+<input type="hidden" name="showXresStd"    value=""/>
+<input type="hidden" name="showXresAsWeb"  value=""/>
+
+<input type="hidden" name="earestoreVersion"  value="221120031427 (2022.11.20 03:14)"/>
+<input type="hidden" name="earestoreBasedOn"  value="221113020316 (2022.11.13 02:03)"/>
+
+<h2>Result as Web Content<!--h2 ahead--><br/>
+</h2>
+</form>
+<em>Not applicable</em>

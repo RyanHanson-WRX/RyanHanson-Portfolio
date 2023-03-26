@@ -1,0 +1,2 @@
+### Created by Ryan Hanson
+These assignments were for IS301, where we had to create shell scripts, then we had two assignments, one where we had to create a makefile to zip them and push them to the class' repository, and then the other where we had to make a dockerfile to build and deploy them.

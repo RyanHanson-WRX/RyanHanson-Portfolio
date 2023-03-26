@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" 
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>Subaru STi Hub</title>
+</head>
+<body class="bg-grey">
+    
+    <!-- Navbar -->
+        <nav class="navbar sticky-top navbar-expand-md py-0">
+            <div class="container-fluid" id="wrapper">
+                <a href="index.html" class="navbar-brand sti-font">Subaru <span class="sti-color">STi</span> Hub</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#subaru-navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="subaru-navbar">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item px-3">
+                            <a href="index.html" class="nav-link sti-font">Home</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a href="models.html" class="nav-link sti-font">Models</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a href="rally.html" class="nav-link sti-font">Rally</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a href="engine.html" class="nav-link sti-font">Engines</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a href="#contact" class="nav-link sti-font">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    <!-- Homehero -->
+    <div id="enginehero" class="center mb-0">
+    </div>
+   
+    <!-- STi Engine -->
+    <main>
+        <div class="text-white bg-dark mx-3 mt-3 py-2 px-2">
+            <p class="h2 fw-bold my-2 text-center">Subaru WRX <span class="sti-color">STi</span> Engine</p>
+            <p class="fst-italic my-2 text-center">The Subaru WRX <span class="sti-color">STi</span> is a boxer engine, meaning it's a flat 4 cylinder. It's a 2.5L, turbo-charged beast of an engine. On stock equiptment, it makes around 305hp at 4,000-5,000 rpms, produces 295 ft-lbs torque, and about 20 PSI of boost. There are drive options which include: Intelligent, Sport, and Sport Sharp, in the order of least power to most power output. The stock 0-60 MPH time of this mean machine is around 4.6 seconds.</p> 
+        </div>
+        <section class="p-2">
+            <div class="container table-responsive">
+                <p class="h2 fw-bold my-2 text-center text-decoration-underline">Subaru Specs</p>
+                <table class="text-center mx-10 table borderless">
+                    <tr>
+                        <th class="sti-color">Model</th>
+                        <th class="sti-color">Engine</th>
+                        <th class="sti-color">Liters</th>
+                        <th class="sti-color">Turbocharger</th>
+                        <th class="sti-color">Horsepower</th>
+                        <th class="sti-color">Torque (ft-lbs)</th>
+                        <th class="sti-color">Turbo PSI</th>
+                    </tr>
+                    <tr>
+                        <td>Impreza</td>
+                        <td>FB20D</td>
+                        <td>2.0</td>
+                        <td>None</td>
+                        <td>148</td>
+                        <td>152</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>WRX</td>
+                        <td>FA20F</td>
+                        <td>2.4</td>
+                        <td>FA20 Blue Turbocharger</td>
+                        <td>268</td>
+                        <td>258</td>
+                        <td>15.9</td>
+                    </tr>
+                    <tr>
+                        <td><span class="sti-color">STi</span></td>
+                        <td>EJ257</td>
+                        <td>2.5</td>
+                        <td>VF48</td>
+                        <td>305</td>
+                        <td>295</td>
+                        <td>20</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        
+        <!-- Engine Pics -->
+        <section class="p-2">
+            <div class="container">
+                <div class="grid">
+                    <div class="row mt-2">
+                        <div class="col-md-4">
+                            <div class="card shadow-lg my-2" id="wrapper">
+                                <div class="card-body">
+                                    <p class="h4 card-title fw-bold">Impreza FB20D Engine</p>
+                                    <img src="media/img/fb20d.jpg" class="img-fluid" alt="Impreza FB20D Engine">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card shadow-lg my-2" id="wrapper">
+                                <div class="card-body">
+                                    <p class="h4 card-title fw-bold">WRX FA20F Engine</p>
+                                    <img src="media/img/fa20f.jpg" class="img-fluid" alt="WRX FA20F Engine">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card shadow-lg my-2" id="wrapper">
+                                <div class="card-body">
+                                    <p class="h4 card-title fw-bold"><span class="sti-color">STi</span> EJ257 Engine</p>
+                                    <img src="media/img/ej257.jpg" class="img-fluid" alt="WRX STi EJ257 Engine">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Footer -->
+    <footer class="bg-grey" id="contact">
+        <div class="container">
+            <div class="grid">
+                <div class="row align-items-center mt-5">
+                    <div class="col-md-4">
+                        <p>Copyright © 2022</p>
+                        <small>Subaru <span class="sti-color">STi</span> Hub <br>
+                            created by Ryan Hanson <br>
+                            <a href="mailto:rhanson19@mail.wou.edu">rhanson19@mail.wou.edu</a></small>
+                    </div>
+                    <div class="col-md-4 offset-md-4">
+                        <form>
+                            <div class="mt-2 mb-2">
+                                <input type="text" class="form-control" placeholder="Your Name">
+                            </div>
+                            <div class="mb-2">
+                                <input type="email" class="form-control" placeholder="Your Email">
+                            </div>
+                            <div class="mb-2">
+                                <input type="number" class="form-control" placeholder="Your Mobile Number">
+                            </div>
+                            <div class="mb-2">
+                                <textarea rows="3" class="form-control" placeholder="Your Text"></textarea>
+                            </div>
+                            <div class="mb-2">
+                                <input type="submit" class="btn btn-danger" value="Submit">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+Name; Sex; Age; Height; Weight
+Joe; M; 51; 69; 170
+Mary; F; 34; 61; 112
+Lizzie; F; 21; 58; 100
+Mark; M; 42; 72; 185
+Hunter; M; 22; 68; 145
+Sophie; F; 21; 60; 122
+Jerry; M; 35; 67; 160
+John; M; 28; 71; 174
+Jane; F; 48; 61; 120
+Rachel; F; 24; 57; 105
+Jasmine; F; 19; 58; 100
+Joyce; F; 49; 60; 102
+Micheal; M; 56; 73; 186
+Trent; M; 18; 70; 183
+John; M; 20; 69; 180

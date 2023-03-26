@@ -1,0 +1,101 @@
+@model Review;
+@{
+    Layout = null;
+}
+
+<!-- Project has a unique controller, with a defined model and view -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>Ryan's User Reviews - Add Review</title>
+        <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="/css/site.css" asp-append-version="true"/>
+    </head>
+    <body class="wrapper">
+        <nav class="navbar sticky-top navbar-expand-md py-0">
+            <div class="container-fluid" id="wrappernav">
+                <div>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="h5 nav-item p-1 px-3">@Html.ActionLink( "Home", "Index", "Home", null, new { style = "text-decoration: none; color: white; text-shadow: 1.5px 2px 0 #000; "} )</li>
+                        <li class="h5 nav-item p-1 px-3">@Html.ActionLink( "Add Company", "AddCompany", "Home", null, new {style = "text-decoration: none; color: white; text-shadow: 1.5px 2px 0 #000; "} )</li>
+                        <li class="h5 nav-item p-1 px-3">@Html.ActionLink( "Add Review", "AddReview", "Review", null, new {style = "text-decoration: none; color: white; text-shadow: 1.5px 2px 0 #000; "} )</li>
+                        <li class="h5 nav-item p-1 px-3">@Html.ActionLink( "All Reviews", "AllReviews", "Review", null, new {style = "text-decoration: none; color: white; text-shadow: 1.5px 2px 0 #000; "} )</li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="h3 nav-item p-1 px-3 cool-font">RH</p>
+                </div>
+            </div>
+        </nav>
+        <section class="p-2">
+            <div class="container">
+                <div class="grid">
+                    @if (ViewData.ModelState.IsValid && Model != null) {
+                        <div class="row mt-2 justify-content-center">
+                            <div class="col-lg-10">
+                                <div class="card my-2 bg-color">
+                                    <div class="card-body card-border" id="wrappercard">
+                                        <p class="h1 card-title fw-bold text-center text-white shadow-title"> Success! Your review for @Model.CompanyName has been recorded!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        }                        
+                                        
+                                    
+                    <div class="row mt-2 justify-content-center">
+                        <div class="col-lg-10">
+                            <div class="card my-2 bg-color">
+                                <div class="card-body card-border" id="wrappercard">
+                                    <p class="h1 card-title fw-bold text-center text-white shadow-title">Add a Review for a Company below!</p>
+                                    <!-- Server-side Dynamic Page using POST, form with 5 elements; Uses Razor built in tags within form -->
+                                    <form asp-action="AddReview" asp-controller="Review" method="post" class="m-2">
+                                        <div asp-validation-summary="All"></div>
+                                        <div class="form-group p-3">
+                                            <label asp-for="CompanyName" class="form-label h5 fw-bold text-white shadow-title">Company Name:</label>
+                                            <select asp-for="CompanyName" class="form-control">
+                                                <option value="">Choose a Company</option>
+                                                @if (FinalProject.Models.Repository.CompanyCount() >= 1) {
+                                                    @foreach (Company comp in FinalProject.Models.Repository.Companies){
+                                                        <option value="@comp.Name">@comp.Name</option>
+                                                 }
+                                                } else {
+                                                    <option value="">No companies to review yet. Please add a company.</option>
+                                                }
+                                            </select>
+                                        </div>
+                                        <div class="form-group p-3">
+                                            <label asp-for="UserName" class="form-label h5 fw-bold text-white shadow-title">Your Name:</label>
+                                            <input asp-for="UserName" class="form-control"/>
+                                        </div>
+                                        <div class="form-group p-3">
+                                            <label asp-for="StarRating" class="form-label h5 fw-bold text-white shadow-title">Star Rating:(0-5)</label>
+                                            <input asp-for="StarRating" class="form-control"/>
+                                        </div>      
+                                        <div class="form-group p-3">
+                                            <label asp-for="Revisit" class="form-label h5 fw-bold text-white shadow-title">Would you do business with this company again?:</label>
+                                            <select asp-for="Revisit" class="form-control">
+                                                <option value="">Choose an option</option>
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                            </select>
+                                        </div>    
+                                        <div class="form-group p-3">
+                                            <label asp-for="ReviewResponse" class="form-label h5 fw-bold text-white shadow-title">Review:</label>
+                                            <input asp-for="ReviewResponse" class="form-control"/>
+                                        </div>                                      
+                                        <div class="text-center button-center">
+                                            <button type="submit" class="button-color btn text-white fw-bold m-1">Add Review</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

@@ -1,0 +1,8 @@
+FROM ubuntu
+
+WORKDIR /IS301_RyanHanson_PowerfulShellScript1
+COPY IS301_RyanHanson_PowerfulShellScript1.sh .
+COPY IS301_inputText.txt .
+RUN chmod +x IS301_RyanHanson_PowerfulShellScript1.sh
+RUN chmod +x IS301_inputText.txt
+CMD command parameter1 parameter2

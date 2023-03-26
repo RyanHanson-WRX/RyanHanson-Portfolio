@@ -1,0 +1,101 @@
+@model Repository;
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>Ryan's User Reviews - All Reviews</title>
+        <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="/css/site.css" asp-append-version="true"/>
+    </head>
+    <body class="wrapper">
+        <nav class="navbar sticky-top navbar-expand-md py-0">
+            <div class="container-fluid" id="wrappernav">
+                <div>
+                    <ul class="navbar-nav">
+                        <li class="h5 nav-item p-1 px-3">@Html.ActionLink( "Home", "Index", "Home", null, new { style = "text-decoration: none; color: white; text-shadow: 1.5px 2px 0 #000; "} )</li>
+                        <li class="h5 nav-item p-1 px-3">@Html.ActionLink( "Add Company", "AddCompany", "Home", null, new {style = "text-decoration: none; color: white; text-shadow: 1.5px 2px 0 #000; "} )</li>
+                        <li class="h5 nav-item p-1 px-3">@Html.ActionLink( "Add Review", "AddReview", "Review", null, new {style = "text-decoration: none; color: white; text-shadow: 1.5px 2px 0 #000; "} )</li>
+                        <li class="h5 nav-item p-1 px-3">@Html.ActionLink( "All Reviews", "AllReviews", "Review", null, new {style = "text-decoration: none; color: white; text-shadow: 1.5px 2px 0 #000; "} )</li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="h3 nav-item p-1 px-3 cool-font">RH</p>
+                </div>
+            </div>
+        </nav>
+        <section class="p-2">
+            <div class="container">
+                <div class="grid">        
+                    <div class="row mt-2 justify-content-center">
+                        <div class="col-lg-10">
+                            <div class="card my-2 bg-color">
+                                <div class="card-body card-border" id="wrappercard">
+                                    <p class="h1 card-title fw-bold text-center text-white shadow-title">All Reviews:</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    @if (Repository.CompanyCount() >= 1){
+                        @foreach (Company c in Repository.Companies){
+                            <div class="row mt-2 justify-content-center">
+                                <div class="col-lg-10">
+                                    <div class="card my-2 bg-color">
+                                       <div class="card-body card-border" id="wrappercard">
+                                            <p class="h1 card-title fw-bold text-center text-white shadow-title" style="text-decoration: underline;">@c.Name</p>
+                                            <p class="h3 fw-bold text-center text-white shadow-title">Stars: @c.Stars out of 5</p>
+                                            <p class="h3 fw-bold text-center text-white shadow-title">Address: @c.Address</p>
+                                            <p class="h3 fw-bold text-center text-white shadow-title">Open Time: @c.OpenTime</p>
+                                            <p class="h3 fw-bold text-center text-white shadow-title">Close Time: @c.CloseTime</p>
+                                            <p class="h3 fw-bold text-center text-white shadow-title">Days Open: @c.DaysOpen</p>
+                                            <form id="toggle-reviews" class="button-center p-2">
+                                                <!-- Uses the DOM with JavaScript/Jquery -->
+                                                <input type="button" value="Show Reviews" class="button-color btn text-white fw-bold m-1" onclick="showReview('@c.Name')">
+                                                <input type="button" value="Hide Reviews" class="button-color btn text-white fw-bold m-1" onclick="hideReview('@c.Name')">
+                                            </form>
+                                            <div class="h3 fw-bold text-white shadow-title" id="@c.Name" style="display: none;">
+                                                <p class="h3 fw-bold text-white shadow-title" style="text-decoration: underline;">Reviews:</p>
+                                                <ul class="h5 fw-bold text-white shadow-title">
+                                                    @foreach (Review r in Repository.Reviews){
+                                                        @if (r.CompanyName == c.Name){
+                                                            <ul class="h5 fw-bold text-white shadow-title" >
+                                                                <li class="p-2">User's Name: <br> - @r.UserName</li>
+                                                                <li class="p-2">User's Rating: <br> - @r.StarRating out of 5 Stars</li>
+                                                                <li class="p-2">Revisit Company in the Future: <br> - @r.Revisit</li>
+                                                                <li class="p-2">User's Review: <br> - @r.ReviewResponse</li>
+                                                            </ul>
+                                                            <hr>
+                                                            <br>
+                                                        } else {
+                                                            continue;
+                                                        }
+                                                    }
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    } else {
+                        <div class="row mt-2 justify-content-center">
+                                <div class="col-lg-10">
+                                    <div class="card my-2 bg-color">
+                                       <div class="card-body card-border" id="wrappercard">
+                                            <p class="h1 card-title fw-bold text-center text-white shadow-title">No companies added to review yet, go add some companies to review and come back!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    }
+
+                </div>
+            </div>
+        </section>
+        <script src="/js/AllReviews.js"></script>
+    </body>
+</html>

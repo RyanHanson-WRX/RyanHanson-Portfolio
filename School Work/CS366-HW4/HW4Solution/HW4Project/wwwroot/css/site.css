@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+
+.field-validation-error { color: #f00;}
+.field-validation-valid { display: none;}
+.input-validation-error {border: 1px solid #f00; background-color: #fee;}
+.validation-summary-errors { font-weight: bold; color: #f00;}
+.validation-summary-valid { display: none;}
+
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+#wrapper {
+  background-color: #a0a0a0;
+  background-image: linear-gradient(to bottom, #FFFFFF, #a0a0a0);
+  top: 0;
+}
+
+.cool-font {
+  font-family: 'New Rocker', Arial, Helvetica, sans-serif;
+  color: rgb(254, 75, 75);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  text-shadow: -1px 2px 0 #000;
+}
+
+.shadow-title {
+  text-shadow: -1px 2px 0 #000;
+}
+
