@@ -1,0 +1,221 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = DbProject.Web
+build_property.RootNamespace = DbProject.Web
+build_property.ProjectDir = /Users/ryanhanson/Desktop/Portfolio/RyanxHanson/School Work/CS364-TermProject/DbProject.Web/
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/ryanhanson/Desktop/Portfolio/RyanxHanson/School Work/CS364-TermProject/DbProject.Web
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/ryanhanson/Desktop/Portfolio/RyanxHanson/School Work/CS364-TermProject/DbProject.Web/Areas/Identity/Pages/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9Mb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ryanhanson/Desktop/Portfolio/RyanxHanson/School Work/CS364-TermProject/DbProject.Web/Areas/Identity/Pages/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9SZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ryanhanson/Desktop/Portfolio/RyanxHanson/School Work/CS364-TermProject/DbProject.Web/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9fVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ryanhanson/Desktop/Portfolio/RyanxHanson/School Work/CS364-TermProject/DbProject.Web/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ryanhanson/Desktop/Portfolio/RyanxHanson/School Work/CS364-TermProject/DbProject.Web/Areas/Identity/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ryanhanson/Desktop/Portfolio/RyanxHanson/School Work/CS364-TermProject/DbProject.Web/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ryanhanson/Desktop/Portfolio/RyanxHanson/School Work/CS364-TermProject/DbProject.Web/Views/Company/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29tcGFueS9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ryanhanson/Desktop/Portfolio/RyanxHanson/School Work/CS364-TermProject/DbProject.Web/Views/Company/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29tcGFueS9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ryanhanson/Desktop/Portfolio/RyanxHanson/School Work/CS364-TermProject/DbProject.Web/Views/Company/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29tcGFueS9EZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ryanhanson/Desktop/Portfolio/RyanxHanson/School Work/CS364-TermProject/DbProject.Web/Views/Company/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29tcGFueS9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ryanhanson/Desktop/Portfolio/RyanxHanson/School Work/CS364-TermProject/DbProject.Web/Views/Company/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29tcGFueS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ryanhanson/Desktop/Portfolio/RyanxHanson/School Work/CS364-TermProject/DbProject.Web/Views/Company/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29tcGFueS9MaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ryanhanson/Desktop/Portfolio/RyanxHanson/School Work/CS364-TermProject/DbProject.Web/Views/CompanyStat/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29tcGFueVN0YXQvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ryanhanson/Desktop/Portfolio/RyanxHanson/School Work/CS364-TermProject/DbProject.Web/Views/CompanyStat/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29tcGFueVN0YXQvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ryanhanson/Desktop/Portfolio/RyanxHanson/School Work/CS364-TermProject/DbProject.Web/Views/CompanyStat/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29tcGFueVN0YXQvRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ryanhanson/Desktop/Portfolio/RyanxHanson/School Work/CS364-TermProject/DbProject.Web/Views/CompanyStat/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29tcGFueVN0YXQvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ryanhanson/Desktop/Portfolio/RyanxHanson/School Work/CS364-TermProject/DbProject.Web/Views/CompanyStat/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29tcGFueVN0YXQvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ryanhanson/Desktop/Portfolio/RyanxHanson/School Work/CS364-TermProject/DbProject.Web/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ryanhanson/Desktop/Portfolio/RyanxHanson/School Work/CS364-TermProject/DbProject.Web/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ryanhanson/Desktop/Portfolio/RyanxHanson/School Work/CS364-TermProject/DbProject.Web/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ryanhanson/Desktop/Portfolio/RyanxHanson/School Work/CS364-TermProject/DbProject.Web/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ryanhanson/Desktop/Portfolio/RyanxHanson/School Work/CS364-TermProject/DbProject.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ryanhanson/Desktop/Portfolio/RyanxHanson/School Work/CS364-TermProject/DbProject.Web/Views/Subscription/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3Vic2NyaXB0aW9uL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ryanhanson/Desktop/Portfolio/RyanxHanson/School Work/CS364-TermProject/DbProject.Web/Views/Subscription/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3Vic2NyaXB0aW9uL0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ryanhanson/Desktop/Portfolio/RyanxHanson/School Work/CS364-TermProject/DbProject.Web/Views/Subscription/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3Vic2NyaXB0aW9uL0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ryanhanson/Desktop/Portfolio/RyanxHanson/School Work/CS364-TermProject/DbProject.Web/Views/Subscription/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3Vic2NyaXB0aW9uL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ryanhanson/Desktop/Portfolio/RyanxHanson/School Work/CS364-TermProject/DbProject.Web/Views/Subscription/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3Vic2NyaXB0aW9uL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ryanhanson/Desktop/Portfolio/RyanxHanson/School Work/CS364-TermProject/DbProject.Web/Views/User/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ryanhanson/Desktop/Portfolio/RyanxHanson/School Work/CS364-TermProject/DbProject.Web/Views/User/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ryanhanson/Desktop/Portfolio/RyanxHanson/School Work/CS364-TermProject/DbProject.Web/Views/User/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9EZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ryanhanson/Desktop/Portfolio/RyanxHanson/School Work/CS364-TermProject/DbProject.Web/Views/User/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ryanhanson/Desktop/Portfolio/RyanxHanson/School Work/CS364-TermProject/DbProject.Web/Views/User/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ryanhanson/Desktop/Portfolio/RyanxHanson/School Work/CS364-TermProject/DbProject.Web/Views/UserSubs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlclN1YnMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ryanhanson/Desktop/Portfolio/RyanxHanson/School Work/CS364-TermProject/DbProject.Web/Views/UserSubscription/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlclN1YnNjcmlwdGlvbi9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ryanhanson/Desktop/Portfolio/RyanxHanson/School Work/CS364-TermProject/DbProject.Web/Views/UserSubscription/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlclN1YnNjcmlwdGlvbi9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ryanhanson/Desktop/Portfolio/RyanxHanson/School Work/CS364-TermProject/DbProject.Web/Views/UserSubscription/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlclN1YnNjcmlwdGlvbi9EZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ryanhanson/Desktop/Portfolio/RyanxHanson/School Work/CS364-TermProject/DbProject.Web/Views/UserSubscription/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlclN1YnNjcmlwdGlvbi9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ryanhanson/Desktop/Portfolio/RyanxHanson/School Work/CS364-TermProject/DbProject.Web/Views/UserSubscription/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlclN1YnNjcmlwdGlvbi9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ryanhanson/Desktop/Portfolio/RyanxHanson/School Work/CS364-TermProject/DbProject.Web/Views/UserSubStat/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlclN1YlN0YXQvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ryanhanson/Desktop/Portfolio/RyanxHanson/School Work/CS364-TermProject/DbProject.Web/Views/UserSubStat/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlclN1YlN0YXQvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ryanhanson/Desktop/Portfolio/RyanxHanson/School Work/CS364-TermProject/DbProject.Web/Views/UserSubStat/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlclN1YlN0YXQvRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ryanhanson/Desktop/Portfolio/RyanxHanson/School Work/CS364-TermProject/DbProject.Web/Views/UserSubStat/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlclN1YlN0YXQvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ryanhanson/Desktop/Portfolio/RyanxHanson/School Work/CS364-TermProject/DbProject.Web/Views/UserSubStat/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlclN1YlN0YXQvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ryanhanson/Desktop/Portfolio/RyanxHanson/School Work/CS364-TermProject/DbProject.Web/Views/UserTotalStat/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlclRvdGFsU3RhdC9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ryanhanson/Desktop/Portfolio/RyanxHanson/School Work/CS364-TermProject/DbProject.Web/Views/UserTotalStat/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlclRvdGFsU3RhdC9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ryanhanson/Desktop/Portfolio/RyanxHanson/School Work/CS364-TermProject/DbProject.Web/Views/UserTotalStat/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlclRvdGFsU3RhdC9EZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ryanhanson/Desktop/Portfolio/RyanxHanson/School Work/CS364-TermProject/DbProject.Web/Views/UserTotalStat/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlclRvdGFsU3RhdC9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ryanhanson/Desktop/Portfolio/RyanxHanson/School Work/CS364-TermProject/DbProject.Web/Views/UserTotalStat/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlclRvdGFsU3RhdC9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ryanhanson/Desktop/Portfolio/RyanxHanson/School Work/CS364-TermProject/DbProject.Web/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ryanhanson/Desktop/Portfolio/RyanxHanson/School Work/CS364-TermProject/DbProject.Web/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ryanhanson/Desktop/Portfolio/RyanxHanson/School Work/CS364-TermProject/DbProject.Web/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-xc1zz8ydye

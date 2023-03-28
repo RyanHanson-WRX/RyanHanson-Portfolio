@@ -1,0 +1,53 @@
+@using Microsoft.AspNetCore.Identity
+@model Repository
+
+@{
+    ViewData["Title"] = "Index";
+}
+@inject UserManager<IdentityUser> UserManager
+
+<body>
+    <h1>Companies</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Company Name
+                </th>
+                <th>
+                    URL
+                </th>
+                <th>
+                    Yearly Earnings
+                </th>
+                <th>
+                    Active Sub Count
+                </th>
+                <th>
+                    Cancelled Sub Count
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+    @foreach (var comp in DbProject.Web.Models.Repository.FormatCompanies) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelComp=> comp.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelComp => comp.URL)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelComp => comp.YearlyEarnings)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelComp => comp.ActiveSubs)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelComp => comp.CancelledSubs)
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</body>

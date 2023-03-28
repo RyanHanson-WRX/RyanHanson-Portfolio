@@ -1,0 +1,67 @@
+/* _content/DbProject.Web/Views/Shared/_Layout.cshtml.rz.scp.css */
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand[b-f93okyg6j3] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a[b-f93okyg6j3] {
+  color: #a28089;
+}
+
+button[b-f93okyg6j3] {
+  background-color: #a28089;
+}
+
+.btn-primary[b-f93okyg6j3] {
+  color: #d0bdf4;
+  background-color: #a28089;
+  border-color: #a28089;
+}
+
+.nav-pills .nav-link.active[b-f93okyg6j3], .nav-pills .show > .nav-link[b-f93okyg6j3] {
+  color: #d0bdf4;
+  background-color: #a28089;
+  border-color: #a28089;
+}
+
+.nav-item[b-f93okyg6j3] {
+  font-style: italic;
+}
+
+.border-top[b-f93okyg6j3] {
+  border-top: 1px solid #a28089;
+}
+.border-bottom[b-f93okyg6j3] {
+  border-bottom: 1px solid #a28089;
+}
+
+.box-shadow[b-f93okyg6j3] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+main[b-f93okyg6j3] {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.container-fluid[b-f93okyg6j3] {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #d0bdf4;
+  color: #494d5f;
+}
+
+.footer[b-f93okyg6j3] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+  font-style: italic;
+}
+
+header[b-f93okyg6j3] {
+  background-color: #d0bdf4;
+}

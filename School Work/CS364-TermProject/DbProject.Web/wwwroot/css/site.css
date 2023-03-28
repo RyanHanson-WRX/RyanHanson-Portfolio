@@ -1,0 +1,53 @@
+a {
+  color:#494d5f;
+}
+
+body {
+  margin-bottom: 60px;
+  background-color: #e5eaf5;;
+  font-family: Helvetica, Arial, sans-serif;
+  color:#424657;
+}
+
+button {
+  background-color: #a28089;
+}
+
+html {
+  font-size: 14px;
+  position: relative;
+  min-height: 100%;
+}
+
+header {
+  background-color: none;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem #8458B3, 0 0 0 0.25rem #d0bdf4;
+}
+
+#logout, #register, #login {
+  font-style: italic;
+  color:#494d5f;
+}
+
+table {
+  background-color: #ffffff98;
+  color:#494d5f;
+}
+
+/* body {
+  background-color: #a0d2eb;
+  color: #e5eaf5;
+  color: #d0bdf4;
+  color: #8458B3;
+  color: #a28089;
+  color: #494d5f
+} */

@@ -1,0 +1,98 @@
+@using Microsoft.AspNetCore.Identity
+@model SubscriptionsViewModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+@inject UserManager<IdentityUser> UserManager
+
+<h1>Your Subscriptions</h1>
+
+<div class="text-center">
+    <p><a class="nav-link h4" asp-area="" asp-controller="UserSubscription" asp-action="Create" style="color:#FFF; text-shadow:-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">Add a subscription</a></p>
+</div>
+
+@if (Model != null){
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Company Name
+            </th>
+            <th>
+                Subscription Tier
+            </th>
+            <th>
+                Monthly Price
+            </th>
+            <th>
+                Start Date
+            </th>
+            <th>
+                End Date
+            </th>
+            <th>
+                Yearly Cost
+            </th>
+            <th>
+                Running Total
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var sub in Model.SubStats) {
+    @if (Model.CurrentUser.Email == UserManager.GetUserName(User)){
+        <tr>
+            <td>
+                @Html.DisplayFor(modelSub=> sub.CompanyName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelSub => sub.SubscriptionTier)
+            </td>
+            <td>
+                @Html.DisplayFor(modelSub => sub.MonthlyPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelSub => sub.StartDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelSub => sub.EndDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelStat => sub.YearlyCost)
+            </td>
+            <td>
+                @Html.DisplayFor(modelStat => sub.RunningTotal)
+            </td>
+            <td>
+                <p><a class="nav-link" asp-area="" asp-controller="UserSubscription" asp-action="Delete" asp-route-id="@sub.UserSubID" style="color:#FFF; text-shadow:-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">Delete</a></p>
+            </td>
+        </tr>
+    }
+}
+    </tbody>
+</table>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Overall Yearly Cost
+            </th>
+            <th>
+                Overall Running Total
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>
+            @Model.TotalStat.TotalSubYearlyCost
+        </td>
+        <td>
+            @Model.TotalStat.AllSubRunningTotal
+        </td>
+    </tr>
+    </tbody>
+</table>
+}
