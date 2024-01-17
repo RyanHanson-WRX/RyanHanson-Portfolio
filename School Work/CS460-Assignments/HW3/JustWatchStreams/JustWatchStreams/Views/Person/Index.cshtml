@@ -1,0 +1,32 @@
+@model AdminError;
+
+@{
+    ViewData["Title"] = "HW3 - Admin Home";
+}
+
+<h1 class="shadowText accentText text-center">Admin Portal</h1>
+<div class="container">
+    <hr />
+    <div class="row justify-content-center adminBTNS d-flex">
+        <div class="col-lg-10">
+            <div class="text-center">
+                <button onclick="window.location='@Url.Action("Create", "Person")'" class="btn btn-secondary mt-2 accentText" type="button">Create an Actor</button>
+                <button onclick="window.location='@Url.Action("Index", "Home")'" class="btn btn-secondary mt-2 accentText" type="button">Go Back Home</button>
+            </div>
+        </div>
+        <div class="col-lg-10 justify-content-center">
+            <form class="text-center" method="POST">
+                <span class="accentBTN">
+                    <input type="submit" value="Edit an Actor" class="btn mt-2" style="width: 20%; height: 65px; font-size: x-large; margin: 10px; padding: 10px;"/>
+                </span>
+                <br />
+                <input type="text" id="editId" name="editId" placeholder="Enter Actor's JustWatchId to Edit" aria-label="EditId" aria-describedby="basic-addon2" style="width: 30%; margin: auto;">
+                @if (Model != null)
+                {   
+                    <br />
+                    <span class="text-danger">@Model.ErrorMessage</span>
+                }
+            </form>
+        </div>
+    </div>
+</div>

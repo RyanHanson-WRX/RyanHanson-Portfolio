@@ -1,0 +1,60 @@
+@{
+    ViewBag.Title = "Current Orders";
+}
+
+<template id="order-template">
+    <div id="order-temp-div" class= "order-card main-bg">
+        <div class="justify-content-center" style="height: 200px;">
+            <div class="row">
+                <div class="col">
+                    <p id="order-id" class="fw-bold mb-0"></p>
+                    <p id="order-name" class="fw-bold"></p>
+                </div>
+                <div class="col">
+                    <p id="order-status" class="fw-bold mb-0"></p>
+                    <p id="order-dlvy" class="fw-bold"></p>
+                </div>
+            </div>
+            <div class="table-container">
+                <table class="order-table table table-striped table-dark table-hover table-sm">
+                    <thead>
+                        <tr>
+                            <th>Station</th>
+                            <th>Item</th>
+                            <th>Quantity</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="item-table">
+                    </tbody>
+                </table>
+            </div>
+            <div class="bottom-card">
+                <p id="order-total" class="fw-bold mb-0"></p>
+                <p id="order-store" style="text-decoration: underline;"></p>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template id="item-template">
+    <tr>
+        <td id="station-name"></td>
+        <td id="item-name"></td>
+        <td id="item-quantity"></td>
+        <td id="item-status"></td>
+    </tr>
+</template>
+
+<div class="text-center">
+    <h1 class="accent-text shadow-text fw-bold" style="text-decoration: underline;">Current Orders</h1>
+    <h1 id="no-orders" class="text-danger">No Current Orders</h1>
+    <div id="orders-div" class="order-box grid-shadow">
+
+    </div>
+    <a href="@Url.Action("Index", "Home")" class=" mt-3 btn-outline-accent btn">Back to Home</a>
+</div>
+
+@section Scripts{
+    <script src="~/js/currentorders.js"></script>
+}

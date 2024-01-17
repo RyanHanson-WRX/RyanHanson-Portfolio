@@ -1,0 +1,35 @@
+@model JustWatchStreams.Models.Person
+
+@{
+    ViewData["Title"] = "HW3 - Admin Create";
+}
+
+<h1 class="shadowText accentText text-center">Admin Portal - Create</h1>
+<div class="container">
+    <h4 class="shadowText text-center">Actor</h4>
+    <hr />
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="JustWatchPersonId" class="control-label"></label>
+                    <input asp-for="JustWatchPersonId" class="form-control"/>
+                    <span asp-validation-for="JustWatchPersonId" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="FullName" class="control-label"></label>
+                    <input asp-for="FullName" class="form-control"/>
+                    <span asp-validation-for="FullName" class="text-danger"></span>
+                </div>
+                <div class="form-group accentBTN text-center">
+                    <input type="submit" value="Create" class="btn mt-2" style="width: 34%;"/>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="text-center">
+        <button onclick="window.location='@Url.Action("Index", "Person")'" class="btn btn-secondary mt-2 accentText" type="button">Admin Home</button>
+    </div>
+</div>

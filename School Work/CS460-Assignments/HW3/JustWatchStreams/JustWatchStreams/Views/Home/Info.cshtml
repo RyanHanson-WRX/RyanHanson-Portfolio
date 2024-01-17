@@ -1,0 +1,48 @@
+@model JustWatchStreams.ViewModels.InfoVM
+
+@{
+    ViewData["Title"] = "HW3 - Info";
+}
+
+<h2 class="fw-bold shadowText accentText text-center">JustWatch Info:</h2>
+<body class="text-white">
+    <hr>
+    <div class="shadow-lg rounded p-3 mb-5">
+        <p><span class="fw-bold shadowText accentText">Total Number of Shows:</span> <br>@Model.NumberOfShows</p>
+        <p><span class="fw-bold shadowText accentText">Number of Movies:</span> <br>@Model.NumberOfMovies</p>
+        <p><span class="fw-bold shadowText accentText">Number of TV Shows:</span> <br>@Model.NumberOfTVShows</p>
+    </div>
+    <hr>
+    <div class="shadow-lg rounded p-3 mb-5">
+        <p><span class="fw-bold shadowText accentText">Show with Highest TMDB Popularity:</span> <br>@Model.ShowWithHighestTMDBPopularity!.Title</p>
+        <p><span class="fw-bold shadowText accentText">TMDB Popularity:</span> <br>@Model.ShowWithHighestTMDBPopularity!.TmdbPopularity</p>
+    </div>
+    <hr>
+    <div class="shadow-lg rounded p-3 mb-5">
+        <p><span class="fw-bold shadowText accentText">Show with Most IMDB Votes:</span> <br>@Model.ShowWithMostIMDBVotes!.Title</p>
+        <p><span class="fw-bold shadowText accentText">IMDB Votes:</span> <br>@Model.ShowWithMostIMDBVotes!.ImdbVotes</p>
+    </div>
+    <hr>
+    <div class="shadow-lg rounded p-3 mb-5">
+        <h6><span class="fw-bold shadowText accentText">Genres:</span></h6>
+        <ul>
+        @foreach (var genre in Model.Genres)
+        {
+            <li>@genre</li>
+        }
+        </ul>
+    </div>
+    <hr>
+    <div class="shadow-lg rounded p-3 mb-5">
+        <p><span class="fw-bold shadowText accentText">Director with Most Shows:</span> <br>@Model.Director!.FullName</p>
+        <p><span class="fw-bold shadowText accentText">Shows from this director:</span></p>
+        <ul>
+        @foreach (var show in Model.DirectorShows)
+        {
+            <li><span class="fw-bold shadowText accentText">Title:</span> @show.Title <br><span class="fw-bold shadowText accentText">Release Year:</span> @show.ReleaseYear</li>
+            <br>
+        }
+        </ul>
+    </div>
+    <hr>
+</body>

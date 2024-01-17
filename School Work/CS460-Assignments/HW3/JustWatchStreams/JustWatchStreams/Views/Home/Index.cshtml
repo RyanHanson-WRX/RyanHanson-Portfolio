@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "HW3 - JustWatchStreams";
+}
+<div class="text-center">
+    <div>
+        <h1 class="display-4 fw-bold shadowText accentText">Welcome!</h1>
+        <p>Looking for shows from a specific actor? Search below!</p>
+    </div>
+
+    <input type="text" placeholder="Search for an actor..." id="search-bar" />
+    <div class="search-results">
+        <div  id="loading-animation" class="loading-animation" style="margin: auto; display: none;"></div>
+        <ul class="list-unstyled" id="results-list">
+        
+        </ul>
+    </div>
+       <!-- Modal -->
+        <div class="modal fade" id="actor-modal" tabindex="-1" aria-labelledby="actor-modal-label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content bg-dark">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 shadowText" id="actor-modal-label"></h1>
+                        <button id="close-actor-modal1" type="button" class="btn-close accentBG" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body shadowText">
+                        <div class="mb-3">
+                            <ul class="list-unstyled text-left" id="actor-show-list">
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button id="close-actor-modal2" type="button" class="btn btn-secondary accentText" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+@section Scripts {
+    <script type="text/javascript" src="~/js/home.js"></script>
+}

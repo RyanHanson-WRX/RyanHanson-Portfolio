@@ -1,22 +1,29 @@
 ### Hey! 👋
-
 My name's Ryan Hanson, a Computer Science Major at Western Oregon University
+
 ### 💥 About Me 💥
-- 📚 Junior at Western Oregon University, currently working towards a bachelor's degree
-    - 💻 Majoring in Computer Science
+- 📚 Senior at Western Oregon University, currently working towards getting my B.S.
     - 💾 Minoring in Information Systems
+    - 📊 Institutional GPA: 3.68 | In Major GPA: 3.78 | Upper Division GPA: 3.95
+
 - 📈 Skills I've obtained through school:
-    - Python, C#, JavaScript
-    - MSSQL, MySQL
+    - Python, C#, C/C++, JavaScript
+    - MSSQL, MySQL, MongoDB
     - MVC ASP.NET CORE
-    - HTML5, CSS
-    - Working with CLI (Unix and Linux), including Shell Scripts and Makefiles
-    - Git Version Control (GitHub)
+    - HTML5, CSS, JSON
+    - Flask, Celery, Redis
+    - Swagger
+    - Working with CLI (Unix, Linux, Windows), including Shell Scripts and Makefiles
+    - Git Version Control
     - Building RESTful Web Applications and microservices
     - Working with EARe Studio for building concept databases
-    - Docker 
-### 📝 Classes I've taken: (Discluding General Education)
-- Courses that I have completed:
+    - Docker
+    - Penetration Testing (NMAP, Wireshark, NetWitness Investigator)
+    - Unit Testing, Test Driven Development
+    - Securing Networks, deploying a Defense in Depth approach
+
+### 📝 Coursework:
+- Courses I've completed:
     - CS 160: Survey of Computer Science
     - CS 161: Computer Science I
     - CS 162: Computer Science II
@@ -26,8 +33,13 @@ My name's Ryan Hanson, a Computer Science Major at Western Oregon University
     - CS 312: Social History of Computing
     - CS 340: Computer Ethics
     - CS 360: Programming Languages
+    - CS 361: Algorithms
     - CS 364: Information Management
+    - CS 365: Operating Systems & Networking
     - CS 366: Software-Language & Tools
+    - CS 367: Software Design & Testing
+    - CS 460: Software Engineering I
+    - CS 463: Cybersecurity & Professional Practices
     - CS 465: Microservices Architecture
     - IS 240: Information Management I
     - IS 278: Networks
@@ -35,11 +47,12 @@ My name's Ryan Hanson, a Computer Science Major at Western Oregon University
     - IS 301: Information Systems Automation
     - IS 340: Information Management II
     - IS 345: Systems Analysis
+    - IS 370: Ethical Hacking
+    - IS 485: Intro to Computer Security
     - MTH 251: Calculus I
     - MTH 252: Calculus II
     - MTH 354: Applied Discrete Mathematics
-- Courses that I will be taking Spring Term of 2023:
-    - CS 361: Algorithms
-    - CS 365: Operating Systems & Networking
-    - CS 367: Software Design & Testing
-    - IS 370: Ethical Hacking
+
+- Courses I'm Currently Taking:
+    - CS 461: Software Engineering II
+    - IS 486: Network Security

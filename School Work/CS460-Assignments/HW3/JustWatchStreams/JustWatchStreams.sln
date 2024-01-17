@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustWatchStreams", "JustWatchStreams\JustWatchStreams.csproj", "{8BE2E66D-A91D-4C2E-AE88-76657269D381}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustWatchStreams_Tests", "JustWatchStreams_Tests\JustWatchStreams_Tests.csproj", "{D340BB9A-5C8D-4D83-AC1C-F54EFB818550}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8BE2E66D-A91D-4C2E-AE88-76657269D381}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BE2E66D-A91D-4C2E-AE88-76657269D381}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BE2E66D-A91D-4C2E-AE88-76657269D381}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BE2E66D-A91D-4C2E-AE88-76657269D381}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D340BB9A-5C8D-4D83-AC1C-F54EFB818550}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D340BB9A-5C8D-4D83-AC1C-F54EFB818550}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D340BB9A-5C8D-4D83-AC1C-F54EFB818550}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D340BB9A-5C8D-4D83-AC1C-F54EFB818550}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
