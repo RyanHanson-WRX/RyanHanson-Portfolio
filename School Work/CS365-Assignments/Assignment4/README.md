@@ -1,5 +1,5 @@
-### Created by Ryan Hanson
-### How to Run:
+# Created by Ryan Hanson
+# How to Run:
 - Clone repository/tag
 - Open terminal/console and cd into `Assignment4` folder
 - On the command line, run ` python3 my_coordinator.py [-v] [-A|-N|-S] [-r <int>] [-c <int>] [-s <int>] [-0 <int>] [-1 <int>] [-2 <int>] [-3 <int>] [-4 <int>] [-5 <int>] [-6 <int>] [-7 <int>] <input_file> `
