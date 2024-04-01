@@ -2,9 +2,9 @@
 My name's Ryan Hanson, a Computer Science Major at Western Oregon University
 
 ### 💥 About Me 💥
-- 📚 Senior at Western Oregon University, currently working towards getting my B.S.
+- 📚 Senior at Western Oregon University, currently working towards getting my B.S. Computer Science
     - 💾 Minoring in Information Systems
-    - 📊 Institutional GPA: 3.68 | In Major GPA: 3.78 | Upper Division GPA: 3.95
+    - 📊 Institutional GPA: 3.69 | In Major GPA: 3.79 | Upper Division GPA: 3.95
 
 - 📈 Skills I've obtained through school:
     - Python, C#, C/C++, JavaScript
@@ -12,6 +12,7 @@ My name's Ryan Hanson, a Computer Science Major at Western Oregon University
     - MVC ASP.NET CORE
     - HTML5, CSS, JSON
     - Flask, Celery, Redis
+    - Node, Express
     - Swagger
     - Working with CLI (Unix, Linux, Windows), including Shell Scripts and Makefiles
     - Git Version Control
@@ -39,6 +40,7 @@ My name's Ryan Hanson, a Computer Science Major at Western Oregon University
     - CS 366: Software-Language & Tools
     - CS 367: Software Design & Testing
     - CS 460: Software Engineering I
+    - CS 461: Software Engineering II
     - CS 463: Cybersecurity & Professional Practices
     - CS 465: Microservices Architecture
     - IS 240: Information Management I
@@ -49,10 +51,11 @@ My name's Ryan Hanson, a Computer Science Major at Western Oregon University
     - IS 345: Systems Analysis
     - IS 370: Ethical Hacking
     - IS 485: Intro to Computer Security
+    - IS 486: Network Security
     - MTH 251: Calculus I
     - MTH 252: Calculus II
     - MTH 354: Applied Discrete Mathematics
 
 - Courses I'm Currently Taking:
-    - CS 461: Software Engineering II
-    - IS 486: Network Security
+    - CS 462: Software Engineering III
+    - CS 407: Seminar: Computer Graphics
