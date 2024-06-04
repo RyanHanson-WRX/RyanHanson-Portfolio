@@ -2,8 +2,8 @@
 My name's Ryan Hanson, a Computer Science Graduate from Western Oregon University
 
 ### 💥 About Me 💥
-- 📚 Senior at Western Oregon University, currently working towards getting my B.S. Computer Science
-    - 💾 Minoring in Information Systems
+- 📚 CS Alumni from Western Oregon University
+    - 💾 Minored in Information Systems
     - 📊 Institutional GPA: 3.69 | In Major GPA: 3.79 | Upper Division GPA: 3.95
 
 - 📈 Skills I've obtained:
