@@ -24,7 +24,6 @@ My name's Ryan Hanson, a Computer Science Graduate from Western Oregon Universit
     - Securing Networks, deploying a Defense in Depth approach
 
 ### 📝 Coursework:
-- Courses I've completed:
     - CS 160: Survey of Computer Science
     - CS 161: Computer Science I
     - CS 162: Computer Science II
