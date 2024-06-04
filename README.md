@@ -38,8 +38,10 @@ My name's Ryan Hanson, a Computer Science Graduate from Western Oregon Universit
     - CS 365: Operating Systems & Networking
     - CS 366: Software-Language & Tools
     - CS 367: Software Design & Testing
+    - CS 407: Seminar: Computer Graphics
     - CS 460: Software Engineering I
     - CS 461: Software Engineering II
+    - CS 462: Software Engineering III
     - CS 463: Cybersecurity & Professional Practices
     - CS 465: Microservices Architecture
     - IS 240: Information Management I
@@ -54,5 +56,3 @@ My name's Ryan Hanson, a Computer Science Graduate from Western Oregon Universit
     - MTH 251: Calculus I
     - MTH 252: Calculus II
     - MTH 354: Applied Discrete Mathematics
-    - CS 462: Software Engineering III
-    - CS 407: Seminar: Computer Graphics
